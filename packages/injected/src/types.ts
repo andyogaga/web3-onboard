@@ -64,7 +64,8 @@ export enum ProviderIdentityFlag {
   Safeheron = 'isSafeheron',
   Talisman = 'isTalisman',
   OneKey = 'isOneKey',
-  Lukso = 'isUniversalProfileExtension'
+  Lukso = 'isUniversalProfileExtension',
+  Fordefi = 'isFordefi'
 }
 
 /**
@@ -140,7 +141,8 @@ export enum ProviderLabel {
   Safeheron = 'Safeheron',
   Talisman = 'Talisman',
   OneKey = 'OneKey',
-  Lukso = 'Lukso UP'
+  Lukso = 'Lukso UP',
+  Fordefi = 'Fordefi'
 }
 
 export interface MeetOneProvider extends ExternalProvider {

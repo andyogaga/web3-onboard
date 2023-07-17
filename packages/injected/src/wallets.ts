@@ -838,6 +838,18 @@ const lukso: InjectedWalletModule = {
   externalUrl: ProviderExternalUrl.Lukso
 }
 
+const fordefi: InjectedWalletModule = {
+  label: ProviderLabel.Fordefi,
+  injectedNamespace: InjectedNameSpace.Ethereum,
+  checkProviderIdentity: ({ provider }) =>
+    !!provider &&
+    !!provider[ProviderIdentityFlag.Fordefi] &&
+    !otherProviderFlagsExist(ProviderIdentityFlag.Fordefi, provider),
+  getIcon: async () => (await import('./icons/fordefi.js')).default,
+  getInterface: getInjectedInterface(ProviderIdentityFlag.Fordefi, true),
+  platforms: ['desktop']
+}
+
 const wallets = [
   zeal,
   exodus,
@@ -888,7 +900,8 @@ const wallets = [
   safeheron,
   talisman,
   onekey,
-  lukso
+  lukso,
+  fordefi
 ]
 
 export default wallets
