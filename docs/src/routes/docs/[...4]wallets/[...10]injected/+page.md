@@ -337,6 +337,7 @@ const injected = injectedModule({
 - OneKey - _Desktop & Mobile_
 - LUKSO - _Desktop_
 - Fordefi - _Desktop_
+- Ronin Wallet - _Desktop & Mobile_
 
 ## Build Environments
 

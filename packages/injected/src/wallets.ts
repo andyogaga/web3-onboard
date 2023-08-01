@@ -786,6 +786,18 @@ const talisman: InjectedWalletModule = {
   externalUrl: ProviderExternalUrl.Talisman
 }
 
+const ronin: InjectedWalletModule = {
+  label: ProviderLabel.RoninWallet,
+  injectedNamespace: InjectedNameSpace.RoninWallet,
+  checkProviderIdentity: ({ provider }) => !!provider,
+  getIcon: async () => (await import('./icons/roninwallet.js')).default,
+  getInterface: async () => ({
+    provider: createEIP1193Provider(window.ronin.provider)
+  }),
+  platforms: ['all'],
+  externalUrl: ProviderExternalUrl.RoninWallet
+}
+
 const onekey: InjectedWalletModule = {
   label: ProviderLabel.OneKey,
   injectedNamespace: InjectedNameSpace.OneKey,
@@ -900,8 +912,9 @@ const wallets = [
   safeheron,
   talisman,
   onekey,
-  lukso,
-  fordefi
+  fordefi,
+  ronin,
+  lukso
 ]
 
 export default wallets
