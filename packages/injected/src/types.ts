@@ -86,7 +86,7 @@ export enum ProviderExternalUrl {
   Talisman = 'https://www.talisman.xyz/',
   Trust = 'https://trustwallet.com/download/',
   OneKey = 'https://onekey.so/download/',
-  LUKSO = 'https://lukso.network'
+  LUKSO = 'https://chrome.google.com/webstore/detail/universal-profiles/abpickdkkbnbcoepogfhkhennhfhehfn?hl=en'
 }
 
 export enum ProviderLabel {
