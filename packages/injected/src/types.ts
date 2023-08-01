@@ -64,7 +64,7 @@ export enum ProviderIdentityFlag {
   Safeheron = 'isSafeheron',
   Talisman = 'isTalisman',
   OneKey = 'isOneKey',
-  Lukso = 'isUniversalProfileExtension',
+  LUKSO = 'isUniversalProfileExtension',
   Fordefi = 'isFordefi'
 }
 
@@ -86,7 +86,7 @@ export enum ProviderExternalUrl {
   Talisman = 'https://www.talisman.xyz/',
   Trust = 'https://trustwallet.com/download/',
   OneKey = 'https://onekey.so/download/',
-  Lukso = 'https://lukso.network'
+  LUKSO = 'https://lukso.network'
 }
 
 export enum ProviderLabel {
@@ -141,7 +141,7 @@ export enum ProviderLabel {
   Safeheron = 'Safeheron',
   Talisman = 'Talisman',
   OneKey = 'OneKey',
-  Lukso = 'Lukso UP',
+  LUKSO = 'Universal Profiles',
   Fordefi = 'Fordefi'
 }
 
@@ -176,7 +176,7 @@ export enum InjectedNameSpace {
   Safeheron = 'safeheron',
   Talisman = 'talismanEth',
   OneKey = '$onekey',
-  Lukso = 'lukso'
+  LUKSO = 'lukso'
 }
 
 export interface CustomWindow extends Window {
